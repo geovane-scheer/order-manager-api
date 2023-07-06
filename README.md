@@ -15,4 +15,6 @@ HOW TO CALL THE ROUTES: </br>
  -run on docker. </br>
  -events with message broker(rabbitmq or kafka), especially in the order and stock movement operations, would be important to the resilience. </br>
  -unit and integration test (junit, mockito, wiremock). </br>
+ -grafana to help visualize/monitor the metrics </br>
+ -kibana to help with the log messages </br>
  
