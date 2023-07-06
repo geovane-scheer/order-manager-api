@@ -5,7 +5,7 @@ database:
 HOW TO CALL THE ROUTESs: </br>
 
 
- *things to do / observations: </br>
+ *things to do / observations*: </br>
  -activate and deactivate entities insted of deleting from database. </br>
  -authentication (jwt). </br>
  -run on docker. </br>
