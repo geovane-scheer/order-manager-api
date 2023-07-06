@@ -1,8 +1,8 @@
 # order-manager rest api
 
-how to run: </br>
+HOW TO RUN: </br>
 database: 
-how to call the routes: </br>
+HOW TO CALL THE ROUTESs: </br>
 
 
  *things to do / observations: </br>
