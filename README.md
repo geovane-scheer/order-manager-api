@@ -13,7 +13,7 @@ HOW TO CALL THE ROUTES: </br>
  -activate and deactivate entities insted of deleting from database. </br>
  -authentication (jwt). </br>
  -run on docker. </br>
- -events with message broker(rabbitmq or kafka), especially in the order and stock movement operations, would be important to the resilience. </br>
+ -events with message broker(rabbitmq or kafka), especially in the order and stock movement operations, would be important to the resilience of the data. </br>
  -unit and integration test (junit, mockito, wiremock). </br>
  -grafana to help visualize/monitor the metrics </br>
  -kibana to help with the log messages </br>
