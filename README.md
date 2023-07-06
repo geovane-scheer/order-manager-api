@@ -1,4 +1,4 @@
-# order-manager
+# order-manager rest api
 
  things to do:
  -authentication
