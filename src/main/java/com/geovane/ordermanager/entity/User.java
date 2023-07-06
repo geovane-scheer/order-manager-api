@@ -1,25 +1,25 @@
 package com.geovane.ordermanager.entity;
 
+import java.math.BigInteger;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "user")
+@Table(name = "users")
+@Builder
 public class User {
 	
 	@Id
 	@GeneratedValue
-	private int id;
+	private BigInteger id;
 	
 	private String name;
 	

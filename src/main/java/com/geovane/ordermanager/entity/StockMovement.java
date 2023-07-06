@@ -11,10 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Setter
@@ -22,11 +19,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "stock_movement")
+@Builder
 public class StockMovement {
 
 	@Id
 	@GeneratedValue
-	private int id;
+	private BigInteger id;
 
 	@Column(name = "creation_date")
 	private LocalDateTime creationDate;
