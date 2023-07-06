@@ -1,6 +1,6 @@
 # order-manager rest api
 
- things to do:
+ things to do: </br>
  -authentication
  -docker
  -events with message broker
