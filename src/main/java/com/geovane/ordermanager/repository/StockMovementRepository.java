@@ -5,10 +5,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.math.BigInteger;
+import java.util.List;
 
 @RepositoryRestResource
 public interface StockMovementRepository extends JpaRepository<StockMovement, BigInteger> {
 
-    StockMovement findByItemId(BigInteger id);
+    List<StockMovement> findByItemIdAndQuantityGreaterThan(BigInteger id, BigInteger quantity);
 
 }

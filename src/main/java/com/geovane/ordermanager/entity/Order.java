@@ -34,6 +34,7 @@ public class Order {
 	
 	private String status;
 
+	@Column(name = "quantity_missing")
 	private BigInteger quantityMissing;
 
 }

@@ -19,7 +19,7 @@ CREATE TABLE orders
 	quantity bigint,
 	user_id bigint references users(id),
 	status text,
-	quantityMissing bigint
+	quantity_missing bigint
 );
 
 CREATE TABLE stock_movement
@@ -28,4 +28,11 @@ CREATE TABLE stock_movement
     creation_date        timestamp,
 	item_id bigint references item(id),
 	quantity bigint
+);
+
+CREATE TABLE orders_stock_movement
+(
+    id    serial primary key,
+    stock_movement_id bigint references stock_movement(id),
+    order_id bigint references orders(id)
 );

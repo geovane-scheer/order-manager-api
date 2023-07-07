@@ -22,10 +22,10 @@ public class StockMovement {
 	@Column(name = "creation_date")
 	private LocalDateTime creationDate;
 	
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "item_id", referencedColumnName = "id")
     private Item item;
 	
 	private BigInteger quantity;
-	
+
 }

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigInteger;
+import java.time.LocalDateTime;
 
 
 @Setter
@@ -15,13 +16,10 @@ import java.math.BigInteger;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class OrderDTO {
-
+public class StockMovementDTO {
 	private BigInteger id;
 	private Item item;
-	private User user;
 	private BigInteger quantity;
-	private String status;
-	private BigInteger quantityMissing;
-	
+	private LocalDateTime creationDate;
+	private String quantityUsed;
 }
