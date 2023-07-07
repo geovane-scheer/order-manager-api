@@ -6,7 +6,8 @@ creation of tables = done by flyway on runtime </br>
 
 
 HOW TO CALL THE ROUTES: </br>
-
+Use swagger for the information about the endpoints </br>
+http://localhost:8080/swagger-ui/index.html </br>
 
  *things to do / observations*: </br>
  -more validations to assure the consistency and integrity of data. </br>
