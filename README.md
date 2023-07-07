@@ -1,8 +1,9 @@
 # order-manager rest api
 
 HOW TO RUN: </br>
-database name: order-manager </br>
+database name: order-manager (create on postgres)</br>
 creation of tables = done by flyway on runtime </br>
+and the run like a Spring boot app in your IDE
 
 
 HOW TO CALL THE ROUTES: </br>
