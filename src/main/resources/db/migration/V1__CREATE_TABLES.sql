@@ -18,7 +18,8 @@ CREATE TABLE orders
 	item_id bigint references item(id),
 	quantity bigint,
 	user_id bigint references users(id),
-	status text
+	status text,
+	quantityMissing bigint
 );
 
 CREATE TABLE stock_movement

@@ -35,11 +35,12 @@ public class UserService {
 
 	public ResponseEntity<?> save(UserDTO user) {
 		if (user.getName() == null || user.getName().isEmpty()) {
-			ResponseEntity.badRequest().body("Name is mandatory");
+			return ResponseEntity.badRequest().body("Name is mandatory");
 		}
 		if (user.getEmail() == null || user.getEmail().isEmpty()) {
-			ResponseEntity.badRequest().body("Name is mandatory");
+			return ResponseEntity.badRequest().body("Email is mandatory");
 		}
+		//TO-DO check if email is already exists in
 		User newUser = userRepository.saveAndFlush(User.builder()
 				.name(user.getName())
 				.email(user.getEmail())

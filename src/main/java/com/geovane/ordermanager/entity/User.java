@@ -2,10 +2,7 @@ package com.geovane.ordermanager.entity;
 
 import java.math.BigInteger;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -18,7 +15,7 @@ import lombok.*;
 public class User {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private BigInteger id;
 	
 	private String name;

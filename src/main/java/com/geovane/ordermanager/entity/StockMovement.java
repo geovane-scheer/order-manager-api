@@ -3,14 +3,7 @@ package com.geovane.ordermanager.entity;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -23,7 +16,7 @@ import lombok.*;
 public class StockMovement {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private BigInteger id;
 
 	@Column(name = "creation_date")

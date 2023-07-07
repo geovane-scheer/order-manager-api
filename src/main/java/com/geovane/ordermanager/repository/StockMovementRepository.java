@@ -9,4 +9,6 @@ import java.math.BigInteger;
 @RepositoryRestResource
 public interface StockMovementRepository extends JpaRepository<StockMovement, BigInteger> {
 
+    StockMovement findByItemId(BigInteger id);
+
 }
